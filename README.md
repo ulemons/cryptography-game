@@ -4,11 +4,15 @@ During the cryptography game you will be guided through exercises that will lead
 
 ## Exercise 1
 
-This exercise provides some tests that currently fail. The idea is that the sender and receiver have a common "bank," they will have to encrypt and decrypt a message through a key and shift the test to the shared bank
+This exercise provides some tests that currently fail. The idea is to use a system similar to Caesar's cipher to decode these messages. In the first phase of the exercise you will not have the shared alphabet but only the symbols it contains, which are: 
+- Lowercase and uppercase letters
+- Numbers
+- Special characters ( ,.'?!$*&@:+)
 
+in the second part of the exercise you will be provided with the shared alphabet, this will demonstrate how much easier it is to decode and encode a message with a shared piece of information.
 ## Exercise 2
 
-In this exercise we will use the Diffie-hellman algorithm to generate the public and private keys. In the same way of the first exercise, you have some unit test and you must pass all the test to complete the exercise.
+In this exercise we will use the Diffie-hellman algorithm to generate the public and private keys. You will have at your disposal the public generators G and p and the secrets of those who must generate a public key and a private key. In the same way of the first exercise, you have some unit test and you must pass all the test to complete the exercise.
 
 ## Exercise 3
 
