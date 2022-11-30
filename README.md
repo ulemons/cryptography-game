@@ -8,8 +8,8 @@ This exercise provides some tests that currently fail. The idea is that the send
 
 ## Exercise 2
 
-Instead, in this exercise you will have to use techniques explained in the lecture to calculate public and private keys. Again you have unit tests that you will need to run.
+In this exercise we will use the Diffie-hellman algorithm to generate the public and private keys. In the same way of the first exercise, you have some unit test and you must pass all the test to complete the exercise.
 
 ## Exercise 3
 
-This last exercise will be a little different, in fact in this case we have a data matrix, where in each field you will be missing some data that you will have to deduce
+In the last exercise you have to interject a conversation between Alice and Bob. The messages that the two exchanged are represented by the file "exercise3.txt". In this case we want to read the messages Alice is sending to Bob. There is a problem, in some cases we were able to read Bob's secret and in others we were not. Try to decode the message ! :)  
