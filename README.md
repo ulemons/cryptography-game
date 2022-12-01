@@ -4,16 +4,23 @@ During the cryptography game you will be guided through exercises that will lead
 
 ## Exercise 1
 
-This exercise provides some tests that currently fail. The idea is to use a system similar to Caesar's cipher to decode these messages. In the first phase of the exercise you will not have the shared alphabet but only the symbols it contains, which are: 
+This exercise provides some tests that currently fail. The idea is to use a system similar to Caesar's cipher to decode these messages. In the first phase of the exercise you will not have the shared alphabet but only the symbols it contains, which are:
+
 - Lowercase and uppercase letters
 - Numbers
-- Special characters ( ,.'?!$*&@:+)
+- Special characters ( ,.'?!$\*&@:+)
 
 in the second part of the exercise you will be provided with the shared alphabet, this will demonstrate how much easier it is to decode and encode a message with a shared piece of information.
+
 ## Exercise 2
 
-In this exercise we will use the Diffie-hellman algorithm to generate the public and private keys. You will have at your disposal the public generators G and p and the secrets of those who must generate a public key and a private key. In the same way of the first exercise, you have some unit test and you must pass all the test to complete the exercise.
+In this exercise we will use the Diffie Hellman algorithm to generate the public and private keys. You will have at your disposal the public generators G and p and the secrets of those who must generate a public key and a private key. In the same way of the first exercise, you have some unit test and you must pass all the test to complete the exercise.
+According the Diffie Hellamn algorithm the formulas you have to evaluate are:
+
+- PUBLIC KEY = $PUBLIC\_C^{private\_key}$ $\bmod$ PUBLIC_P
+
+- PRIVATE KEY = $public\_key^{secret}  $\bmod$ PUBLIC_P
 
 ## Exercise 3
 
-In the last exercise you have to interject a conversation between Alice and Bob. The messages that the two exchanged are represented by the file "exercise3.txt". In this case we want to read the messages Alice is sending to Bob. There is a problem, in some cases we were able to read Bob's secret and in others we were not. Try to decode the message ! :)  
+In the last exercise you have to interject a conversation between Alice and Bob. The messages that the two exchanged are represented by the file "exercise3.txt". In this case we want to read the messages Alice is sending to Bob. There is a problem, in some cases we were able to read Bob's secret and in others we were not. Try to decode the message ! :)
