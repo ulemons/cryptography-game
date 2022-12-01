@@ -17,7 +17,7 @@ in the second part of the exercise you will be provided with the shared alphabet
 In this exercise we will use the Diffie Hellman algorithm to generate the public and private keys. You will have at your disposal the public generators G and p and the secrets of those who must generate a public key and a private key. In the same way of the first exercise, you have some unit test and you must pass all the test to complete the exercise.
 According the Diffie Hellamn algorithm the formulas you have to evaluate are:
 
-- public_key = PUBLIC_G $^{private\_key}$ $\bmod$ PUBLIC_P
+- public_key = PUBLIC_G $^{secret}$ $\bmod$ PUBLIC_P
 
 - private_key = public_key $^{secret}$ $\bmod$ PUBLIC_P
 
