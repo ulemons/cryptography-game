@@ -1,3 +1,6 @@
+bank = "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz,'?!.$*&0123456789@:+"
+
+
 def encrypt(message, key):
     pass
 
