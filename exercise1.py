@@ -1,11 +1,20 @@
 bank = "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz,'?!.$*&0123456789@:+"
 
-
 def encrypt(message, key):
-    pass
+    result = ""
+    for char in message:
+        position = bank.find(char)
+        new_position = (position + key) % len(bank)
+        result += bank[new_position]
+    return result
 
 def decrypt(message, key):
-    pass
+    result = ""
+    for char in message:
+        position = bank.find(char)
+        new_position = (position - key) % len(bank)
+        result += bank[new_position]
+    return result
     
 assert encrypt("test",2) == "vguv"
 assert encrypt("encrypted message",42) == "+I@MTKO+:7H+NN8B+"
